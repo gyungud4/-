@@ -81,3 +81,10 @@ a:hover{
     color:white;
     text-decoration: underline;
 }
+.footer-links li{
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: repeat(4, 1fr);
+    color: #ffffffb3
+    
+}
