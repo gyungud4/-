@@ -14,6 +14,9 @@ html,
 body {
     height: 100%;
 }
+main{
+    min-height: 80vh;
+}
 
 header {
     padding: 25px 60px;
@@ -87,4 +90,13 @@ a:hover{
     grid-template-columns: repeat(4, 1fr);
     color: #ffffffb3
     
+}
+footer{
+    background-color: #1b1b1b;
+    margin: 32px;
+    padding: 70px;
+}
+.good{
+    color: #ffffffb3;
+    font-size: 12px;
 }
