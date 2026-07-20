@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
-body {
-    background: linear-gradient(to bottom, #4d0000, #000);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 html,
 body {
     height: 100%;
 }
-main{
+
+body {
+    background: linear-gradient(to bottom, #4d0000 0%, #000000 60%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+}
+
+main {
     min-height: 80vh;
 }
 
@@ -31,6 +37,17 @@ header h1 {
 .login-container {
     width: 420px;
     margin: 80px auto;
+}
+
+.login-container h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.login-container p {
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #ffffffb3;
 }
 
 .login-container input {
@@ -57,20 +74,9 @@ header h1 {
     cursor: pointer;
 }
 
-.login-container h1 {
-    margin-bottom: 10px;
-    font-size: 32px;
-}
-
-.login-container p {
-    margin-bottom: 18px;
-    font-size: 18px;
-    color: #ffffffb3
-}
-
 .login-container .robot {
     font-size: 13px;
-    color: #ffffff80
+    color: #ffffff80;
 }
 
 details a {
@@ -80,23 +86,51 @@ details a {
 
 a,
 a:visited,
-a:hover{
-    color:white;
+a:hover {
+    color: white;
     text-decoration: underline;
 }
-.footer-links li{
-    display: grid;
-    font-size: 14px;
-    grid-template-columns: repeat(4, 1fr);
-    color: #ffffffb3
-    
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    padding: 60px 15%;
+    width: 100%;
+    box-sizing: border-box;
 }
-footer{
-    background-color: #1b1b1b;
-    margin: 32px;
-    padding: 70px;
-}
-.good{
+
+.footer-links span {
+    display: block;
+    margin-bottom: 30px;
     color: #ffffffb3;
-    font-size: 12px;
+    font-size: 16px;
+}
+
+.footer-links ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footer-links ul li a {
+    font-size: 14px;
+    color: #ffffffb3;
+}
+
+footer select {
+    background: #000;
+    color: #fff;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.good {
+    color: #ffffff80;
+    font-size: 11px;
+    line-height: 1.8;
 }
