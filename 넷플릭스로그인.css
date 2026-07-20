@@ -39,6 +39,7 @@ header h1 {
     border: 1px solid #666;
     background: rgba(0, 0, 0, 0.5);
     color: white;
+    font-size: 16px;
 }
 
 .login-container button {
@@ -52,6 +53,7 @@ header h1 {
     font-size: 18px;
     cursor: pointer;
 }
+
 .login-container h1 {
     margin-bottom: 10px;
     font-size: 32px;
@@ -60,8 +62,22 @@ header h1 {
 .login-container p {
     margin-bottom: 18px;
     font-size: 18px;
+    color: #ffffffb3
 }
 
 .login-container .robot {
     font-size: 13px;
+    color: #ffffff80
+}
+
+details a {
+    display: block;
+    margin-top: 15px;
+}
+
+a,
+a:visited,
+a:hover{
+    color:white;
+    text-decoration: underline;
 }
